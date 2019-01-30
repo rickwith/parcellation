@@ -82,15 +82,7 @@ def Level_1_parcellation(data_list,mask_file, output_folder,cluster_range,num_it
          np.save(os.path.join(output_folder,"sub_matrix_{:02d}.npy".format(ind)),sub_ad_matrix)  
          #sub_ad_matrix = np.load("sub_matrix_{:02d}.npy".format(ind))
 
-     #ad_matrix_1st = np.mean(sub_ad_matrix, axis=2)
-     #np.save(os.path.join(output_folder,'ave_ad_matrix_1st.npy'),ad_matrix_1st) 
- 
-  #Human readable data
-    # np.savetxt('ave_matrix.txt', all_corr_matrix/len(table))
-    
-#     return  ad_matrix_1st
-
-
+   
 def base_parcellation_SC(corr_matrix, num_k,num_iter):   
     
     #input_matrix = np.load('ave_matrix.npy')
@@ -167,7 +159,7 @@ def adjacency_matrix(cluster_ind,num_cluster):
 
 def Level_2_parcellation(subject_list,output_folder,cluster_range,num_iteration):
     #------ 
-    #admatrix = np.load('ave_ad_matrix_1st.npy')
+   
     table=np.genfromtxt(subject_list, skip_header=1,delimiter=',', dtype=None)
     num_sub = len(table)
     com_silhouette = np.zeros((num_iteration,num_sub,cluster_range))
