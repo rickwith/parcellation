@@ -3,7 +3,7 @@
 """
 Created on Wed Nov 14 18:58:12 2018
 
-@author: XRAY
+@author: RY
 """
 import nibabel as nib
 import numpy as np
