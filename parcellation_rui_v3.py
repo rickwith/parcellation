@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Nov 14 18:58:12 2018
-
+It does brain parcellation based on functional connectivity strenth 
 @author: RY
 """
 import nibabel as nib
